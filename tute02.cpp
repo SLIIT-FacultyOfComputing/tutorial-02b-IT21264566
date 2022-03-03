@@ -42,3 +42,34 @@ int main()
   
    return 0;
 }
+
+#incluse<iostream>
+using namespace std;
+int main()
+{
+double salary, netSalary;
+int etype,otHrs, otRate;
+  cout<<"enter employee type :";
+  cin>>etype<<endl;
+  cout<<"enter salary:";
+  cin>>salary<<endl;
+  cout<<"enter otHrs:";
+  cin>>otHrs<<endl;
+
+  switch(etype){
+    case 1:
+    otRate= 1000;
+    break;
+    case 2:
+    otRate=1500;
+    break;
+    default:
+    otRate=1700;
+    break;
+}
+  netSalary= slary + otHrs* otRate;
+  cout<<"net salary is:"<<netSalary<<endl;
+
+  return 0;
+  
+}
